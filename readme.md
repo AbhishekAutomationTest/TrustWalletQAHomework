@@ -29,7 +29,7 @@ Here's the list of all functional E2E cases:
 | **Tools & Framework** | **Automation Framework** | **Test Framework** | **Programming Language** | **Comments** |
 |----------------------|-------------------------|--------------------|-------------------------|--------------|
 | Web-Extension Automation | Selenium | Jest | Typescript | Since Selenium is most popular tool for web-extension. |
-| Android Mobile-App Automation | Appium | testNG | Kotlin | Since Appium is most popular tool for Android App Automation. I created using kotlin because javascript needed an experience with webdriverio which I don't have much experience. |
+| Android Mobile-App Automation | Appium | testNG | Kotlin | Since Appium is most popular tool for Android App Automation. I created using kotlin because javascript needed an experience with webdriverio which I don't have much yet. |
 
 
 
