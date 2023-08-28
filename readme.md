@@ -31,6 +31,11 @@ Here's the list of all functional E2E cases:
 | Web-Extension Automation | Selenium | Jest | Typescript | Since Selenium is most popular tool for web-extension. |
 | Android Mobile-App Automation | Appium | testNG | Kotlin | Since Appium is most popular tool for Android App Automation. I created using kotlin because javascript needed an experience with webdriverio which I don't have much yet. |
 
+#### Features of Framework:
+- It follows Page Object Model DesignPattern
+- Framework has explicit & implicit wait conditions to wait for either elements to be located or expected condition to be matched to increase the stability.
+
+
 ### Test Result: 
 
 ![Alt text](image.png)
