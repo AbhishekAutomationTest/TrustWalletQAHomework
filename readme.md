@@ -14,7 +14,7 @@ Here's the list of all functional E2E cases:
 
 | **Test Case ID** | **Test Case Description** | **Preconditions** | **Test Steps** | **Expected Result** | **Status** |
 |------------------|--------------------------|-------------------|----------------|---------------------|------------|
-| TC001 | End-to-End Positive Flow Test | App installed and launched | 1. Verify Welcome Screen elements.<br>2. Tap on "Create New Wallet" button.<br>3. Enter a valid password and confirm it.<br>4. Write down the secret phrase.<br>5. Confirm the secret phrase.<br>6. Tap "Open Wallet" button.<br>7. Verify new user tips on the home screen. | The wallet is successfully created, and new user tips are displayed on the home screen. | Not Executed |
+| TC001 | End-to-End Positive Flow Test | App installed and launched | 1. Verify Welcome Screen elements.<br>2. Tap on "Create New Wallet" button.<br>3. Enter a valid password and confirm it.<br>4. Write down the secret phrase.<br>5. Confirm the secret phrase.<br>6. Tap "Open Wallet" button.<br>7. Verify new user tips on the home screen. | The wallet is successfully created, and new user tips are displayed on the home screen. | Partial executed |
 | TC002 | Negative Flow: Empty Password | App installed and launched | 1. Tap "Create New Wallet" button.<br>2. Leave the password fields empty.<br>3. Tap "Confirm" button. | App displays an error message indicating that the password is required. | Not Executed |
 | TC003 | Negative Flow: Password Mismatch | App installed and launched | 1. Tap "Create New Wallet" button.<br>2. Enter a password and a different confirmation password.<br>3. Tap "Confirm" button. | App displays an error message indicating that the passwords do not match. | Not Executed |
 | TC004 | Negative Flow: Weak Password | App installed and launched | 1. Tap "Create New Wallet" button.<br>2. Enter a weak password and confirm it.<br>3. Tap "Confirm" button. | App displays an error message indicating that the password is too weak. | Not Executed |
@@ -33,8 +33,6 @@ Here's the list of all functional E2E cases:
 |----------------------|-------------------------|--------------------|-------------------------|--------------|
 | Web-Extension Automation | Selenium | Jest | Typescript | Since Selenium is most popular tool for web-extension. |
 | Android Mobile-App Automation | Appium | testNG | Kotlin | Since Appium is most popular tool for Android App Automation. I created using kotlin because javascript needed an experience with webdriverio which I don't have much experience. |
-
-Feel free to use this updated table in your markdown file.
 
 
 
