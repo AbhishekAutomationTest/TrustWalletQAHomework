@@ -5,7 +5,6 @@ const config: Config.InitialOptions = {
   testEnvironment: 'node',
   setupFilesAfterEnv: ['./src/tests/webExtension/BaseTest.ts'],
   testTimeout: 1000 * 360, // 6 mins
-
   // Configure reporters
   reporters: [
     'default', // Use the default console reporter

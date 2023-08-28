@@ -18,7 +18,7 @@ let secretPhraseScreen: SecretPhraseScreen;
 let successScreen : SuccessScreen;
 let homeScreen : HomeScreen;
 
-  beforeAll(async () => {
+  beforeEach(async () => {
     console.log('inside before');
 
     /*add chrome options*/
@@ -42,7 +42,7 @@ let homeScreen : HomeScreen;
     await initiateAllPageObjects();
   }, BEFOREAllTIMEOUT);
 
-  afterAll(async () => {
+  afterEach(async () => {
     console.log('inside after');
     await driver.quit();
   }, AFTERAllTIMEOUT);

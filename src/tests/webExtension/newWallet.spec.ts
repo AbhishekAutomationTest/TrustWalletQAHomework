@@ -1,6 +1,6 @@
 import { welcomeScreen, setPasswordScreen, secretPhraseScreen } from './BaseTest';
 
-describe('New Wallet', () => {
+describe('Success Flow', () => {
   it('should create new wallet successfully', async () => {
     // Use the shared driver instance
     console.log('inside test');
@@ -8,7 +8,7 @@ describe('New Wallet', () => {
     await welcomeScreen.waitToBeVisible();
     await welcomeScreen.selectCreateNewWalletOption();
     await setPasswordScreen.waitToBeVisible();
-    await setPasswordScreen.createNewPassword("MyValidPaswword1!");
+    await setPasswordScreen.setNewPassword("MyValidPaswword1!");
     await secretPhraseScreen.waitToBeVisible();
     await secretPhraseScreen.backupYourSecretPhrase();
     // await secretPhraseScreen.confirmYourSecretPhrase();
@@ -19,4 +19,18 @@ describe('New Wallet', () => {
     // await homeScreen.handleUserTipPopup();
     // await homeScreen.waitForWalletTabToBePresent();
   });
+
+  it('should not allow to proceed with empty password fields', async () => {
+    await welcomeScreen.waitToBeVisible();
+    await welcomeScreen.selectCreateNewWalletOption();
+    await setPasswordScreen.waitToBeVisible();
+    await setPasswordScreen.verifyEmptyPasswordFlow();
+  })
+
+  it('should display an error message when passwords do not match', async () => {
+    await welcomeScreen.waitToBeVisible();
+    await welcomeScreen.selectCreateNewWalletOption();
+    await setPasswordScreen.waitToBeVisible();
+    await setPasswordScreen.verifyPasswordDoNotMatchError('MyValidPaswword1!', 'MyValidPaswword1!!');
+  })
 });
