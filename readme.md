@@ -1,13 +1,13 @@
-###Application FLow: 
+### Application FLow: 
 
 Welcome screen -> Create a new wallet -> Set and confirm Password screen -> Backup
 your secret phrase screen -> your secret phrase screen -> confirm secret phrase ->
 success screen -> click ‘open wallet’ and new user tips in home screen display.
 
 
-###Test Plan : 
+### Test Plan : 
 
-###Objective: 
+### Objective: 
 To test the flow from the welcome screen to successfully opening the wallet with new user tips displayed on the home screen
 
 Here's the list of all functional E2E cases:
@@ -23,11 +23,8 @@ Here's the list of all functional E2E cases:
 | TC007 | Negative Flow: Incorrect Order of Secret Phrase | App installed and launched | 1. Complete the password setup.<br>2. Write down the secret phrase.<br>3. Enter the correct secret phrase in the incorrect order.<br>4. Tap "Confirm" button. | App displays an error message indicating that the secret phrases do not match. | Not Executed |
 | TC008 | Negative Flow: Incorrect Secret Phrase Confirmation Order | App installed and launched | 1. Complete the password setup.<br>2. Write down the secret phrase.<br>3. Confirm the secret phrase in the incorrect order.<br>4. Tap "Confirm" button. | App displays an error message indicating that the secret phrases do not match. | Not Executed |
 | TC009 | Edge Case: Maximum Password Length | App installed and launched | 1. Tap "Create New Wallet" button.<br>2. Enter a password of maximum allowed length.<br>3. Confirm the password.<br>4. Tap "Confirm" button. | The password is successfully set and confirmed. | Not Executed |
-| TC010 | Edge Case: Maximum Secret Phrase Length | App installed and launched | 1. Complete the password setup.<br>2. Write down a secret phrase of maximum allowed length.<br>3. Confirm the secret phrase.<br>4. Tap "Confirm" button. | The secret phrase is successfully confirmed. | Not Executed |
-| TC011 | Edge Case: Blank Secret Phrase | App installed and launched | 1. Complete the password setup.<br>2. Leave the secret phrase blank.<br>3. Confirm the secret phrase.<br>4. Tap "Confirm" button. | App displays an error message indicating that the secret phrase is required. | Not Executed |
-| TC012 | Edge Case: Long Secret Phrase | App installed and launched | 1. Complete the password setup.<br>2. Write down a secret phrase of very long length.<br>3. Confirm the secret phrase.<br>4. Tap "Confirm" button. | The secret phrase is successfully confirmed. | Not Executed |
 
-###Tools & Framework: 
+### Tools & Framework: 
 
 | **Tools & Framework** | **Automation Framework** | **Test Framework** | **Programming Language** | **Comments** |
 |----------------------|-------------------------|--------------------|-------------------------|--------------|
